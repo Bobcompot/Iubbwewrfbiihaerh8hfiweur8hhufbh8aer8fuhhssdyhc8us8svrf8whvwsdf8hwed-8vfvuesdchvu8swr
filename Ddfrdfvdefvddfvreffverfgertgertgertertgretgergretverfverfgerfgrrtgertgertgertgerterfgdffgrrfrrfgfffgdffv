@@ -1,0 +1,255 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "💥RoundyHeads HUB💥", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://110892365088203",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+Tab:AddButton({
+	Name = "Inf Yeild",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "BEST HUB EVER!!!!",
+	Content = "RoundyHeads ON TOP",
+	Image = "rbxassetid://110892365088203",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Hubs",
+	Icon = "rbxassetid://110892365088203",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "🔥Hubs🔥"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+Tab:AddButton({
+	Name = "FFJ Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Sniper.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "🔥Menace Hub🔥",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Menace-Hub-16796"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+local Tab = Window:MakeTab({
+	Name = "Chat Bypassers",
+	Icon = "rbxassetid://110892365088203",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "CHAT BYPASS"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Chat Bypasser OP",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/BNHdNdPb"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Some stuff🗿",
+	Icon = "rbxassetid://110892365088203",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "smth lel💥"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Kahoot Chat quiz",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/M69dgcF2"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "✅Fe Fast Animation✅",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Fast-Animation-FE_744"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "GAME SCRIPTS",
+	Icon = "rbxassetid://110892365088203",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "🔥BROOKHEAVEN🔥"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Chat control click = make u small also use inf yeild headsit [playername]",
+	Callback = function()
+      		local args = {
+    [1] = "CharacterSizeDown",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "🔥Dress To Impress🔥"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Dress To Impress Script",
+	Callback = function()
+      		pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()
+end)
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Chat shit🤑",
+	Icon = "rbxassetid://110892365088203",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "CHAT SHIT🤑🤑🤑"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Chat Draw Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Chat-Draw-Mobile-Supported-18040"))()
+end)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Chat Rizz",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rizz-gui-script-6992"))()
+end)
+  	end    
+})
